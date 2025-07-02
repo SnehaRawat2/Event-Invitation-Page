@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneha's 21st Birthday Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: url('https://st4.depositphotos.com/21486874/31005/i/450/depositphotos_310054898-stock-photo-happy-21st-birthday-gold-greeting.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            padding: 0 20px;
+        }
+
+        .header-content h1 {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .header-content p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .detail-box {
+            flex: 1 1 30%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .detail-box h2 {
+            color: #ff4081;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .description {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            color: #555;
+        }
+
+        .rsvp {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .rsvp a {
+            text-decoration: none;
+            background: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .rsvp a:hover {
+            background: #e91e63;
+        }
+
+        @media (max-width: 768px) {
+            .detail-box {
+                flex: 1 1 100%;
+            }
+
+            .header-content h1 {
+                font-size: 34px;
+            }
+
+            .header-content p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Sneha's 21st Birthday Bash 🎉</h1>
+            <p>You are cordially invited to celebrate a magical evening full of memories, laughter, and joy.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="details">
+            <div class="detail-box">
+                <h2>📅 Date</h2>
+                <p>July 15, 2025</p>
+            </div>
+            <div class="detail-box">
+                <h2>⏰ Time</h2>
+                <p>6:00 PM Onwards</p>
+            </div>
+            <div class="detail-box">
+                <h2>📍 Venue</h2>
+                <p>The Palm Courtyard, Delhi</p>
+            </div>
+        </div>
+
+        <div class="description">
+            <p>Get ready for an unforgettable night filled with music, dancing, delicious food, and wonderful people.
+                Dress to impress and bring your best vibes — it's going to be a night to remember.</p>
+        </div>
+
+        <div class="rsvp">
+            <a href="mailto:sneha@example.com?subject=RSVP%20for%20Sneha's%20Birthday">🎁 RSVP Now</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
